@@ -25,4 +25,14 @@ public class Taco {
     public void setIdTaco(int idTaco) {
         this.idTaco = idTaco;
     }
+
+    public Float determinarValor(){
+        float valor = 0;
+
+        for(Ingrediente ingrediente : ingredientes){
+            valor += ingrediente.getPrecio();
+        }
+        return valor;
+    }
+
 }

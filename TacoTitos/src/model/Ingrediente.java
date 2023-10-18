@@ -4,6 +4,7 @@ public class Ingrediente {
     private String nombre;
     private TipoIngrediente oTipoIngrediente;
     private float precio;
+    private int idIngrediente;
     public String getNombre() {
         return nombre;
     }
@@ -13,6 +14,15 @@ public class Ingrediente {
     public TipoIngrediente getoTipoIngrediente() {
         return oTipoIngrediente;
     }
+
+    public int getIdIngrediente() {
+        return idIngrediente;
+    }
+
+    public void setIdIngrediente(int idIngrediente) {
+        this.idIngrediente = idIngrediente;
+    }
+
     public void setoTipoIngrediente(TipoIngrediente oTipoIngrediente) {
         this.oTipoIngrediente = oTipoIngrediente;
     }
